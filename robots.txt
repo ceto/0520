@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: http://0520.szabogabi.com/sitemap.xml
-Host: 0520.szabogabi.com
+Sitemap: http://clc.szabogabi.com/sitemap.xml
+Host: clc.szabogabi.com
