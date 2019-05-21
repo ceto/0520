@@ -15,7 +15,7 @@ const config = {
   site_description: 'Eastdil Secured 0520',
 
   // Your website's URL, used for sitemap
-  site_url: '0520.szabogabi.com',
+  site_url: 'http://0520.szabogabi.com',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',
@@ -40,9 +40,7 @@ const config = {
     src: 'src',
     dist: 'dist',
   },
-  package: JSON.parse(
-    fs.readFileSync(path.join(ROOT, '/package.json'), { encoding: 'utf-8' }),
-  ),
+  package: JSON.parse(fs.readFileSync(path.join(ROOT, '/package.json'), { encoding: 'utf-8' })),
 };
 
 module.exports = config;
