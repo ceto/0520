@@ -6,30 +6,31 @@
 }
 
 .toplogo {
-    width: 20%;
+    width: 25%;
     max-width: 18em;
-    top: 5%;
-    left: 5%;
+    top: calc(1.5vw + 2.5%);
+    left: calc(1.5vw + 2.5%);
 }
 
 .bottomlogo {
-    width: 15%;
+    width: 20%;
     max-width: 12em;
-    bottom: 5%;
-    right: 5%;
+    bottom: calc(1.5vw + 2.5%);
+    right: calc(1.5vw + 2.5%);
 }
 
 .mapped {
     position: relative;
     width: 100%;
     //height: 100vh;
-    //overflow: hidden;
+    //min-height: 30rem;
+    border: 1.5vw solid $body-background;
+    margin: 0 auto;
 }
 
 .mapped__img {
-    //position: absolute;
     display: block;
-    //width: 100%;
+    width: 100%;
     //height: 100%;
     //object-fit: cover;
 }
@@ -41,14 +42,32 @@
     width: 100%;
     height: 100%;
     display: block;
-    //object-fit: cover;
-    //fill: #56627a;
     fill: transparent;
+}
 
-    a {
-        &:hover,
-        &:focus {
-            //cursor: zoom-in;
-        }
+@supports (object-fit: cover) {
+    .mapped {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 30rem;
+        border: 1.5vw solid $body-background;
+    }
+
+    .mapped__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mapped__map {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        fill: transparent;
     }
 }
